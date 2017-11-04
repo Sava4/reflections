@@ -12,16 +12,22 @@ What value do you think it offers?
 How can you use the staging area to make sure you have one commit per logical
 change?
 
-*You can add and remove files from staging? (I guess)...
+*You can add and remove files from staging area
+*Using git diff you can compare working and staging
+* git diff --staged compares recent commit and staging
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
-*Different developers working on different features without stepping on each others toes. You can discard a branch that is not needed.
+*Branching is convenient when working with experimental features. The master branch
+*Progresses separately from the other branches. After they can merge.
+*Different developers working on different features without stepping on each others toes. 
+*You can discard a branch that is not needed.
 * E.g. you need to release and postpone implementing some features later.
 
 How do the diagrams help you visualize the branch structure?
 
+*You can see logical order of commits for each branch. And unreachable commits?
 *They show the tree structure of branches an at what point in time they were branched.
 *You see a full history view of changes
 
@@ -34,5 +40,8 @@ the diagram the way we do?
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
 
+*Git tracks lines of code when considering merge. 
+*In case of changes there is a broken file with speecial markings like >>>>HEAD, ====common ancestors, master etc.
 *Automatic merging is not foolproof. It assumes that merged version will work
-*Manually checking is harder but we get an added benefit that this new version will work and no logical conflicts, errors are there.
+*Manually checking is harder but we get an added benefit that this new version 
+*will work and no logical conflicts, errors are there.
