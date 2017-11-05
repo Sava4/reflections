@@ -17,7 +17,9 @@ automatically stay up-to-date with your remote repository?
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
 
-    *Fork - you begin by copying open source project and continue to work on it in your own repository
+    *Fork - you begin by copying open source project and continue to work on it in your own repository.
+    *       This lets you explicitly mention the original author as well makes easier to commit back to the original.
+    *       Original repository also keeps track on the number of forks of the project.
     *Clone - you copy repository into your working directory to work on a local  filesystem
     *Branch is for features and experimental commits that you can work separately from master
 
